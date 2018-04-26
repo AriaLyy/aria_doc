@@ -1,0 +1,796 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.1 注解不生效 · Aria 使用指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="laoyuyu<511455842@qq.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="feedback.html" />
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"AriaLyy","repo":"Aria","type":"watch","size":"small","count":true},{"user":"AriaLyy","repo":"Aria","type":"fork","size":"small","count":true},{"user":"AriaLyy","repo":"Aria","type":"star","size":"small","count":true},{"user":"AriaLyy","type":"follow","width":"230","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/AriaLyy" target="_blank" class="custom-link">关于我</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://www.laoyuyu.me" target="_blank" class="custom-link">我的博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../start/start.html">
+            
+                <a href="../start/start.html">
+            
+                    
+                    1.1 开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../start/config.html">
+            
+                <a href="../start/config.html">
+            
+                    
+                    1.2 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../start/any_java.html">
+            
+                <a href="../start/any_java.html">
+            
+                    
+                    1.3 在任意类中使用Aria
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../start/task_explain.html">
+            
+                <a href="../start/task_explain.html">
+            
+                    
+                    1.4 任务说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../start/annotation_explain.html">
+            
+                <a href="../start/annotation_explain.html">
+            
+                    
+                    1.5 注解说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    下载
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../download/http_normal.html">
+            
+                <a href="../download/http_normal.html">
+            
+                    
+                    2.1 HTTP下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../download/http_group.html">
+            
+                <a href="../download/http_group.html">
+            
+                    
+                    2.2 HTTP组合任务下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../download/ftp_normal.html">
+            
+                <a href="../download/ftp_normal.html">
+            
+                    
+                    2.3 ftp下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../download/ftp_dir.html">
+            
+                <a href="../download/ftp_dir.html">
+            
+                    
+                    2.4 ftp文件夹下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    上传
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../upload/http_normal.html">
+            
+                <a href="../upload/http_normal.html">
+            
+                    
+                    3.1 http上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../upload/ftp_normal.html">
+            
+                <a href="../upload/ftp_normal.html">
+            
+                    
+                    3.2 ftp上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../api/task_list.html">
+            
+                <a href="../api/task_list.html">
+            
+                    
+                    4.1 获取任务列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../api/task_handle.html">
+            
+                <a href="../api/task_handle.html">
+            
+                    
+                    4.2 常用的任务操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../api/linstener_sign_task.html">
+            
+                <a href="../api/linstener_sign_task.html">
+            
+                    
+                    4.3 只监听单个任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../api/extend_field.html">
+            
+                <a href="../api/extend_field.html">
+            
+                    
+                    4.4 对任务添加额外信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    实体说明
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../entity/download_entity.html">
+            
+                <a href="../entity/download_entity.html">
+            
+                    
+                    5.1 DownloadEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../entity/group_entity.html">
+            
+                <a href="../entity/group_entity.html">
+            
+                    
+                    5.2 DownloadGroupEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../entity/upload_entity.html">
+            
+                <a href="../entity/upload_entity.html">
+            
+                    
+                    5.3 UploadEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../entity/download_task_entity.html">
+            
+                <a href="../entity/download_task_entity.html">
+            
+                    
+                    5.4 DownloadTaskEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../entity/download_group_task_entity.html">
+            
+                <a href="../entity/download_group_task_entity.html">
+            
+                    
+                    5.5 DownloadGroupTaskEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../entity/upload_task_entity.html">
+            
+                <a href="../entity/upload_task_entity.html">
+            
+                    
+                    5.6 UploadTaskEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../entity/ftp_url_entity.html">
+            
+                <a href="../entity/ftp_url_entity.html">
+            
+                    
+                    5.7 FtpUrlEntity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="6.1.1" data-path="annotaion_invalid.html">
+            
+                <a href="annotaion_invalid.html">
+            
+                    
+                    6.1 注解不生效
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="feedback.html">
+            
+                <a href="feedback.html">
+            
+                    
+                    6.2 反馈说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6.1 注解不生效</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6CE8;&#x89E3;&#x65E0;&#x6548;&#x3001;proxyclasscounter&#x6587;&#x4EF6;&#x672A;&#x751F;&#x6210;"><a name="&#x6CE8;&#x89E3;&#x65E0;&#x6548;&#x3001;proxyclasscounter&#x6587;&#x4EF6;&#x672A;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x6CE8;&#x89E3;&#x65E0;&#x6548;&#x3001;proxyclasscounter&#x6587;&#x4EF6;&#x672A;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x89E3;&#x65E0;&#x6548;&#x3001;ProxyClassCounter&#x6587;&#x4EF6;&#x672A;&#x751F;&#x6210;</h1>
+<ol>
+<li>&#x68C0;&#x67E5;&#x4E0B;&#x4F60;&#x7684;&#x5DE5;&#x7A0B;&#x4E2D;&#x6709;&#x6CA1;&#x6709;&#x4F7F;&#x7528;apply plugin: &apos;android-apt&apos;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;annotationProcessor&#x3002;</li>
+<li>&#x68C0;&#x67E5;&#x4E0B;annotationProcessor &#x548C; compile &#x7248;&#x672C;&#x662F;&#x5426;&#x4E00;&#x81F4;&#xFF0C;&#x4E0D;&#x4E00;&#x81F4;&#x7684;&#x8BDD;&#x5BF9;&#x5BFC;&#x81F4;&#x751F;&#x6210;&#x4EE3;&#x7406;&#x6587;&#x4EF6;&#x5931;&#x8D25;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x662F;Android studio&#x7684;module&#x4E2D;&#x5F15;&#x7528;&#x7684;Aria&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x8FD8;&#x9700;&#x8981;&#x518D;app&#x6A21;&#x5757;&#x4E2D;&#x6DFB;&#x52A0;&#x540C;&#x6837;&#x7684;&#x5BFC;&#x5165;&#x4EE3;&#x7801;<pre><code class="lang-gradle"> <span class="hljs-keyword">compile</span> <span class="hljs-string">&apos;com.arialyy.aria:aria-core:{version code}&apos;</span>
+ annotationProcessor <span class="hljs-string">&apos;com.arialyy.aria:aria-compiler:{version code}&apos;</span>
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x8BBE;&#x7F6E;&#x90FD;&#x65E0;&#x6548;&#x6216;&#x63A7;&#x5236;&#x53F0;&#x6253;&#x5370;&#x4E0B;&#x9762;&#x7684;&#x9519;&#x8BEF;</p>
+<pre><code class="lang-gradle">Annotation processors must be explicitly declared now.  The following <span class="hljs-keyword">dependencies</span> on the <span class="hljs-keyword">compile</span> <span class="hljs-keyword">classpath</span> are found to 
+contain annotation processor.  Please add them to the annotationProcessor configuration.
+</code></pre>
+<p>&#x8BF7;&#x5728;app&#x7684;build.gradle&#x6587;&#x4EF6;&#x7684;defaultConfig&#x5757;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-gradle">android {
+  compileSdkVersion <span class="hljs-number">26</span>
+  buildToolsVersion <span class="hljs-string">&quot;26.0.2&quot;</span>
+  defaultConfig {
+    ....
+    javaCompileOptions {
+      annotationProcessorOptions {
+        includeCompileClasspath <span class="hljs-keyword">true</span>
+      }
+    }
+  }
+  ...
+}
+</code></pre>
+</li>
+<li>&#x5982;&#x679C;&#x90FD;&#x4E0D;&#x662F;&#x7684;&#x8BDD;&#xFF0C;build&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x70B9;&#x51FB;as&#x53F3;&#x4E0B;&#x89D2;&#x7684;gradle console&#x7A97;&#x53E3;&#xFF0C;&#x770B;&#x770B;&#x62A5;&#x4EC0;&#x4E48;&#x9519;&#x8BEF;&#xFF08;&#x5982;&#x679C;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x53EF;&#x4EE5;&#x7684;&#x8BDD;&#xFF0C;&#x9EBB;&#x70E6;&#x5728;Issues&#x7559;&#x8A00;&#x7ED9;&#x6211;&#xFF09;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="feedback.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 6.2 反馈说明">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.1 注解不生效","level":"6.1.1","depth":2,"next":{"title":"6.2 反馈说明","level":"6.1.2","depth":2,"path":"other/feedback.md","ref":"other/feedback.md","articles":[]},"previous":{"title":"其它","level":"6.1","depth":1,"ref":"","articles":[{"title":"6.1 注解不生效","level":"6.1.1","depth":2,"path":"other/annotaion_invalid.md","ref":"other/annotaion_invalid.md","articles":[]},{"title":"6.2 反馈说明","level":"6.1.2","depth":2,"path":"other/feedback.md","ref":"other/feedback.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","anchors","simple-page-toc","versions-select","copy-code-button","donate","github","github-buttons","-lunr","-search","search-plus","-sharing","sharing-plus","disqus","expandable-chapters","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"laoyuyu.me"},"github":{"url":"https://github.com/AriaLyy/Aria"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"donate":{"alipay":"https://zhangjikai.com/resource/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"谢谢你请我吃糖果~~","wechat":"https://zhangjikai.com/resource/weixin.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"AriaLyy","repo":"Aria","type":"watch","size":"small","count":true},{"user":"AriaLyy","repo":"Aria","type":"fork","size":"small","count":true},{"user":"AriaLyy","repo":"Aria","type":"star","size":"small","count":true},{"user":"AriaLyy","type":"follow","width":"230","size":"small","count":true}]},"copy-code-button":{},"versions":{"options":[{"value":"http://gitbook.zhangjikai.com","text":"v3.4"}]},"sharing":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"laoyuyu<511455842@qq.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aria 使用指南","language":"zh-hans","output.name":"site","links":{"sidebar":{"关于我":"https://github.com/AriaLyy","我的博客":"http://www.laoyuyu.me"}},"gitbook":"3.2.3","description":"Aria使用指南"},"file":{"path":"other/annotaion_invalid.md","mtime":"2018-04-25T01:46:02.698Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-26T06:31:07.209Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
