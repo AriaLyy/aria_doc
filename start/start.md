@@ -2,8 +2,8 @@
 ## 导入aria
 在app目录下的build.gradle文件中添加以下依赖
 ```java
-compile 'com.arialyy.aria:aria-core:3.3.16'
-annotationProcessor 'com.arialyy.aria:aria-compiler:3.3.16'
+compile 'com.arialyy.aria:aria-core:3.4'
+annotationProcessor 'com.arialyy.aria:aria-compiler:3.4'
 ```
 如果出现android support，请将 `compile 'com.arialyy.aria:aria-core:<last-version>'`替换为
 ```
