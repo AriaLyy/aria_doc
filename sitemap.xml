@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url> <loc>https://aria.laoyuyu.me/aria_doc/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/start/start.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/start/config.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/start/any_java.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/start/task_explain.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/start/annotation_explain.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/download/http_normal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/download/http_group.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/download/ftp_normal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/download/ftp_dir.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/upload/http_normal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/upload/ftp_normal.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/api/task_list.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/api/task_handle.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/api/linstener_sign_task.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/api/extend_field.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/entity/download_entity.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/entity/group_entity.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/entity/upload_entity.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/entity/download_task_entity.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/entity/download_group_task_entity.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/entity/upload_task_entity.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/entity/ftp_url_entity.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/other/annotaion_invalid.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://aria.laoyuyu.me/aria_doc/other/feedback.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+</urlset>
