@@ -1,4 +1,4 @@
-## 任务说明
+# 任务说明
 在Aria中，根据功能的不同划分了6种不同的任务，分别是：
 * HTTP下载任务
 * HTTP组合任务
@@ -19,7 +19,7 @@
 FTP文件下载任务，意思是，传入一个FTP文件夹地址，将下载该文件夹下对应的所有文件，进度为: 已下载的文件长度的总和
 
 ## 任务队列说明
-![任务队列说明](../task_queue.png)
+![任务队列说明](../assets/task_queue.png)
 
 在Aria中，所有的`上传\下载`操作都是一个任务，用户添加的任务时，Aria首先都会进入到cache_queue中：
 * 如果run_queue没满，则会马上执行该任务
@@ -27,10 +27,10 @@ FTP文件下载任务，意思是，传入一个FTP文件夹地址，将下载�
 
 当任务完成、停止、失败，run_queue将会将任务出队，并回调相应的方法，然后从cache_queue中提取等待中的任务执行
 
-[run_queue大小配置]()
+[run_queue大小配置](http://aria.laoyuyu.me/aria_doc/start/config.html)
 
 
 ## 任务的生命周期
-![生命周期](../task_life_cycle.png)
+![生命周期](../assets/task_life_cycle.png)
 
 如上图所示，每一个任务都有自己的生命周期，任务处于生命周期不同的阶段回调对应的方法

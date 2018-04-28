@@ -1,3 +1,4 @@
+<!-- ex_nonav -->
 ## DownloadTaskEntity
 DownloadTaskEntity为任务信息
 
@@ -10,9 +11,9 @@ DownloadTaskEntity为任务信息
 | redirectUrl | String | 重定向地址 | http任务发生重定向才有 |
 | removeFile | boolean | 删除任务时，是否删除已下载完成的文件 | true： 删除任务数据库记录，并且删除已经下载完成的文件<br> false：如果任务已经完成，只删除任务数据库记录 <br> 未完成的任务，不管true还是false，都会删除文件|
 | code | int | http状态码 | |
-| urlEntity | [FtpUrlEntity]() | ftp登录信息 | 只有ftp任务才有 |
+| urlEntity | [FtpUrlEntity](http://aria.laoyuyu.me/aria_doc/entity/ftp_url_entity.html) | ftp登录信息 | 只有ftp任务才有 |
 | url | String | 下载地址 | |
 | isGroupTask | boolean | 是否属于组合任务或ftpdir任务 | true：属于；false：不属于 |
 | groupName | String | 属于组合任务，为组合任务名，属于FtpDir任务，为FtpDir文件夹路径 ||
 | isChunked | boolean | 是否是chunk模式 | true：是，false：不是 |
-| entity | [DownloadEntity]() | 下载任务实体 | |
+| entity | [DownloadEntity](http://aria.laoyuyu.me/aria_doc/entity/download_entity.html) | 下载任务实体 | |

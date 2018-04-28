@@ -1,4 +1,4 @@
-## 注意事项
+# 注意事项
 除了在widget（Activity、Fragment、Dialog、Popupwindow）中使用注解方法外，你还可以在Service、Notification等组件中使用注解函数。
  **注意：**
  - 注解回掉采用Apt的方式实现，所以，你不需要担心这会影响你机器的性能

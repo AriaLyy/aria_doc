@@ -1,13 +1,14 @@
+<!-- ex_nonav -->
 ## DownloadGroupEntity
 DownloadGroupEntity为组合任务的载体，里面包含了组合任务的一些关键信息
 
 | 字段 | 类型 | 作用 | 备注 |
 | :----: | :----: | ---- | ---- |
 | speed | long | 速度（单位为：byte）| |
-| convertSpeed | String | 转换后的速度（mb/s）| 需要在[config]()中配置，如果不配置，则为null |
-| str | String | 扩展字段 | [扩展字段说明]() |
+| convertSpeed | String | 转换后的速度（mb/s）| 需要在[config](http://aria.laoyuyu.me/aria_doc/start/config.html)中配置，如果不配置，则为null |
+| str | String | 扩展字段 | [扩展字段说明](http://aria.laoyuyu.me/aria_doc/api/extend_field.html) |
 | fileSize | long | 文件大小（单位为byte） | |
-| convertFileSize | String | 单位转换后的文件大小（xxmb） | 需要在[config]()中配置，如果不配置，则为null |
+| convertFileSize | String | 单位转换后的文件大小（xxmb） | 需要在[config](http://aria.laoyuyu.me/aria_doc/start/config.html)中配置，如果不配置，则为null |
 | state | int | 状态 | 0：失败；1：完成；2：停止；3：等待；<br> 4：正在执行；5：预处理；6：预处理完成；7：取消任务 |
 | currentProgress | long | 当前下载进度（单位为byte） | |
 | completeTime | long | 完成时间(时间戳) | |
