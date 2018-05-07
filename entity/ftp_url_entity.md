@@ -1,3 +1,4 @@
+<!-- ex_nonav -->
 ## FtpUrlEntity
 
 | 字段 | 类型 | 作用 | 备注 |

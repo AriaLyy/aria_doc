@@ -1,13 +1,17 @@
 # http组合任务
 任务组的下载和普通任务的下载基本上差不多，区别在于，任务组下载不需要对每一个子任务设置保存路径，**但是需要设置任务组保存文件夹路径，所有子任务都保存在该文件夹下**
 
+## 组合任务控制
+
+* [组合任务注解](http://aria.laoyuyu.me/aria_doc/start/annotation_explain.html#http%E7%BB%84%E5%90%88%E4%BB%BB%E5%8A%A1%E4%B8%8B%E8%BD%BDftp%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E8%BD%BD%E6%B3%A8%E8%A7%A3)
+
 * 下载\恢复下载
 
   ```java
   Aria.download(this)
       .loadGroup(urls)     //设置一主任务，参数为List<String>
-      .setDownloadDirPath(groupDirPath)    //设置任务组的文件夹路径
-      /**
+      .setDirPath(groupDirPath)    //设置任务组的文件夹路径
+      /*
        * 任务组总任务大小，任务组是一个抽象的概念，没有真实的数据实体，任务组的大小是Aria动态获取子任务大小相加而得到的，
        * 如果你知道当前任务组总大小，你也可以调用该方法给任务组设置大小
        *
@@ -49,4 +53,20 @@
   如下所示：
   ```java
   Aria.download(this).loadGroup(urls).setExtendField("扩展字段").save();
+  ```
+
+## 组合任务子任务操作
+
+* [子任务注解](http://aria.laoyuyu.me/aria_doc/start/annotation_explain.html#%E7%BB%84%E5%90%88%E4%BB%BB%E5%8A%A1%E4%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%B3%A8%E8%A7%A3)
+
+* 启动组合任务中的一个子任务
+
+  ```java
+     Aria.download(getContext()).loadGroup(mUrls).getSubTaskManager().startSubTask(mChildEntity.getUrl());
+  ```
+
+* 停止组合任务中的一个子任务
+  
+  ```java
+    Aria.download(getContext()).loadGroup(mUrls).getSubTaskManager().stopSubTask(mChildEntity.getUrl());
   ```

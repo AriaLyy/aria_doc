@@ -1,11 +1,15 @@
 # ftp下载
 
+## ftp控制
+
+* [FTP任务注解](http://aria.laoyuyu.me/aria_doc/start/annotation_explain.html#httpftp%E5%8D%95%E4%BB%BB%E5%8A%A1%E4%B8%8B%E8%BD%BD%E6%B3%A8%E8%A7%A3)
+
 * 开始\恢复下载
  ```java
  Aria.download(this)
     .loadFtp("ftp://192.18.104.129:21/haha/large.rar")
     .login("lao", "123456")				//登录FTP服务器
-    .setDownloadPath("/mnt/sdcard/")	//设置文件保存文件夹
+    .setFilePath("/mnt/sdcard/")	//设置文件保存文件夹
     .start();
 ```
 

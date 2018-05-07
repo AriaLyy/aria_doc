@@ -1,4 +1,9 @@
 # FTP单文件上传
+
+## 任务控制
+
+* [事件注解](http://aria.laoyuyu.me/aria_doc/start/annotation_explain.html#httpftp%E5%8D%95%E4%BB%BB%E5%8A%A1%E4%B8%8A%E4%BC%A0%E6%B3%A8%E8%A7%A3)
+
 * 开始\恢复上传
 
  ```java

@@ -1,11 +1,15 @@
 # FTP文件夹下载
 
+## FTP任务控制
+
+* [事件注解](http://aria.laoyuyu.me/aria_doc/start/annotation_explain.html#http%E7%BB%84%E5%90%88%E4%BB%BB%E5%8A%A1%E4%B8%8B%E8%BD%BDftp%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E8%BD%BD%E6%B3%A8%E8%A7%A3)
+
 * 开始\恢复下载
 
  ```java
  Aria.download(this)
     .loadFtpDir("ftp://172.18.104.129:21/haha/")
-    .setDownloadDirPath(downloadPath)
+    .setDirPath(downloadPath)
     .login("lao", "123456")
     .start();
  ```
