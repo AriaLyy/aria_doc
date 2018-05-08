@@ -186,3 +186,23 @@ UploadEntity entity = Aria.upload(this).getUploadEntity(FILE_PATH);
 ```java
   Aria.download(this).loadFtp(URL).addHeader("key", "value").save();
 ```
+
+### 使用服务端提供的文件名
+
+在某些场景下，可能需要使用服务端提供的文件名，那么你可以这么做
+
+```java
+
+ Aria.download(SingleTaskActivity.this)
+        .load(DOWNLOAD_URL)
+        .useServerFileName(true)  // 使用服务端提供的文件名
+        .setRequestMode(RequestEnum.GET)
+        .setFilePath(Environment.getExternalStorageDirectory().getPath() + "/ggsg3.apk")
+        .start();
+```
+
+需要注意的是，Aria是从服务器端的`content-disposition`字段获取文件名，`content-disposition`对应的value的数据格式必须如下所示，否则获取不到文件名
+```
+attachment;filename=xxx  // xxx 为文件名
+```
+
